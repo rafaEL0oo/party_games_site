@@ -2,6 +2,7 @@
 <html lang="pl">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Gry imprezowe</title>
     <link rel="icon" type="image/png" href="PARTY_GAMES_LOGO.png">
   <style>
@@ -59,6 +60,38 @@
       font-weight: bold;
       color: #333;
     }
+    @media (max-width: 600px) {
+      body {
+        padding: 10px;
+      }
+
+      h1 {
+        font-size: 1.5em;
+        margin-bottom: 20px;
+      }
+
+      .games-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+        justify-items: center;
+      }
+
+      .game-icon {
+        width: 140px;
+        height: 140px;
+        border-radius: 20px;
+      }
+
+      .game {
+        width: 140px;
+      }
+
+      .game-name {
+        font-size: 16px;
+      }
+    }
+
   </style>
 </head>
 <body>
